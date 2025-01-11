@@ -1,5 +1,8 @@
 import Header from "./components/Header.jsx";
 import Hero from "./components/Hero.jsx";
+import ProjectSlider from "./components/ProjectSlider.jsx";
+import Testimonials from "./components/Stories.jsx";
+import Process from "./components/Process.jsx";
 import Features from "./components/Features.jsx";
 import Stat from "./components/Stat.jsx";
 import Blog from "./components/Blog.jsx";
@@ -12,6 +15,9 @@ const App = () => {
       <Header />
       <div className="bg-bg text-white py-20 min-h-screen">
         <Hero />
+        {/* <ProjectSlider /> */}
+        <Testimonials />
+        <Process />
         <Features />
         <Stat />
         <Blog />
