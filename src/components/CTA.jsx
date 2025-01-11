@@ -1,5 +1,4 @@
-
-const Hero = () => {
+const CTA = () => {
     return (
         <div className="flex flex-col items-center justify-center text-center space-y-6 py-40 w-8/12 mx-auto">
             <h1 className="text-5xl leading-none"><span className="text-primary leading-snug">Ready to Scale?</span><br />Join successful brands that chose us as their <span className="text-primary">growth accelerator</span></h1>
@@ -11,4 +10,4 @@ const Hero = () => {
     )
 }
 
-export default Hero;
+export default CTA;
