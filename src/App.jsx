@@ -10,7 +10,7 @@ const App = () => {
   return (
     <div>
       <Header />
-      <div className="bg-bg text-white pt-32  py-20 min-h-screen">
+      <div className="bg-bg text-white py-20 min-h-screen">
         <Hero />
         <Features />
         <Stat />

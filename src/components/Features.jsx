@@ -1,25 +1,21 @@
+import { FiLayers } from "react-icons/fi";
+
 const Features = () => {
   const features = [
     {
       title: "Experience",
       description:
         "Decades of collective wisdom. Leverage our extensive experience to avoid common pitfalls and accelerate your business growth.",
-      src: "/images/layers-three.svg",
-      alt: "Experience",
     },
     {
       title: "Quick Support",
       description:
         "We are your reliable partner, always there when you need us, ensuring smooth operations at every stage of your growth.",
-      src: "/images/layers-three.svg",
-      alt: "Quick Support",
     },
     {
       title: "Cost Savings",
       description:
         "Maximising impact, minimising costs efficiency is key. We provide cost-effective solutions without compromising on quality.",
-      src: "/images/layers-three.svg",
-      alt: "Cost Savings",
     },
   ];
 
@@ -41,13 +37,7 @@ const Features = () => {
           >
             <div className="bg-[#030516] w-full rounded-2xl p-8 sm:p-10 hover:shadow-lg">
               <div className="w-fit p-2 bg-[#60A6E7] bg-opacity-60 rounded-md mb-5">
-                <img
-                  src={feature.src}
-                  alt={feature.alt}
-                  width="30"
-                  height="30"
-                  className="object-contain"
-                />
+              <FiLayers className="text-primary"/>
               </div>
               <h4 className="text-2xl font-medium mb-5">{feature.title}</h4>
               <p className="text-[17.5px] text-gray-600 mb-0">{feature.description}</p>
