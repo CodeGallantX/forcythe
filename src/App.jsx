@@ -10,8 +10,10 @@ const App = () => {
       <div className="bg-bg text-white pt-32 px-24 py-20 min-h-screen">
         <Hero />
         <Blog />
-        <Footer />
       </div>
+        <div className="bg-[#061626] px-24 py-20">
+          <Footer />
+        </div>
     </div>
   )
 }
