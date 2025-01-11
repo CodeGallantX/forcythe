@@ -5,7 +5,7 @@ const Header = () => {
                 <img src="/forcythe_logo.svg" className="" alt="" />
             </div>
             <nav className="">
-                <ul className="flex flex-row items-center justify-center space-x-6 text-white">
+                <ul className="flex flex-row items-center justify-center space-x-7 text-white">
                     <li><a href="#">About</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Portfolio</a></li>

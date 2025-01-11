@@ -2,8 +2,11 @@ import { FaCaretRight } from "react-icons/fa6";
 
 const Hero = () => {
     return (
-        <div className="bg-[url('/header-background-svg')] bg-no-repeat md:min-h-screen">
-            <div className="flex flex-col items-start justify-center w-full bg-white bg-opacity-10 rounded-[2rem] sm:rounded-[3rem] p-5 py-8 md:p-8 lg:p-10 my-10 space-y-6">
+        <div className="px-28 relative">
+            <div>
+                <img src="/header-background.svg" alt="" className="absolute w-11/12 -top-10 left-1/3 -translate-x-1/3" />
+            </div>
+            <div className="flex flex-col items-start justify-center w-full bg-white bg-opacity-10 rounded-[2rem] sm:rounded-[3rem] p-5 py-8 md:p-8 lg:p-10 my-10 space-y-6 z-10">
                 <h1 className="text-7xl w-4/5">We build <span className="text-secondary">products</span> that shape a better future</h1>
                 <p className="text-lg text-gray-400 w-3/5">We’re the architects of digital excellence across industries. We redefine business with cutting-edge digital strategies that invokes sector-wide transformation.</p>
                 <a href="#" className="relative group">
