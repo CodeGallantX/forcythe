@@ -3,7 +3,7 @@ import { FaCaretRight } from "react-icons/fa6";
 const Blog = () => {
     return (
         <div>
-            <div>
+            <div className="flex flex-row items-center justify-between">
                 <h1 className="text-4xl">Read our articles, news and product blog</h1>
                 <a href="#" className="relative group">
                     <button className="bg-white px-5 py-3 rounded-full group-hover:bg-[#064386] text-bg font-semibold group-hover:text-white transition-all duration-300 ease">Visit Blog <FaCaretRight className="inline-block ml-0.5 text-lg -translate-y-0.5 group-hover:hidden" /></button>

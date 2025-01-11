@@ -11,7 +11,7 @@ const App = () => {
         <Hero />
         <Blog />
       </div>
-        <div className="bg-[#061626] px-24 py-20">
+        <div className="bg-[#061626] px-24 py-14 text-white">
           <Footer />
         </div>
     </div>
