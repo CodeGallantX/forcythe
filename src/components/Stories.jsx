@@ -20,7 +20,7 @@ const Testimonials = () => {
             </div>
 
             <div className="w-full overflow-x-auto mb-8">
-                <div className="flex flex-row items-center justify-between w-full border border-blue-700 rounded-full bg-bg">
+                <div className="flex flex-row items-center justify-between w-full border border-blue-700 rounded-full bg-bg gap-0">
                     {companies.map((company, index) => (
                         <button
                             key={company.name}
@@ -48,7 +48,12 @@ const Testimonials = () => {
                 </div>
             </div>
 
-            <div className="max-w-3xl mx-auto p-6 sm:p-8 bg-[#0c2745] text-white rounded-2xl flex flex-col sm:flex-row">
+            <div
+                className="relative max-w-3xl mx-auto p-6 sm:p-8 bg-[#0c2745] text-white rounded-2xl flex flex-col sm:flex-row"
+                style={{
+                    marginLeft: `calc(${activeTab * 20}% - ${activeTab * 10}px)`,
+                }}
+            >
                 <div className="sm:w-3/5 mb-6 sm:mb-0 sm:pr-6">
                     <p className="text-base sm:text-lg font-semibold mb-4">{companies[activeTab].name}</p>
                     <p className="text-sm sm:text-base leading-6">{companies[activeTab].testimonial}</p>
