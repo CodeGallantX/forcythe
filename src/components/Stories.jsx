@@ -12,7 +12,7 @@ const Testimonials = () => {
     const [activeTab, setActiveTab] = useState(0);
 
     return (
-        <section className="py-16 px-4 bg-bg">
+        <section className="py-16 px-6 md:px-10 xl:px-28  bg-bg">
             <div className="max-w-4xl mx-auto text-center mb-12">
                 <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white">
                     Discover the transformative stories of startups that scaled new heights with us
