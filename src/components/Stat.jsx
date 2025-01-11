@@ -4,9 +4,9 @@ const Stat = () => {
   return (
     <div className="relative mx-auto bg-gradient-to-b from-[#0c2645] to-bg py-20">
       <div>
-        <img src="/arc.svg" alt="" className="absolute w-3/5 left-1/2 -translate-x-1/2" />
+        <img src="/arc.svg" alt="" className="absolute max-w-3xl w-full h-[30rem] object-cover object-top left-1/2 -translate-x-1/2" />
       </div>
-      <div className="pt-20 sm:pt-40 lg:pt-60 pb-10 md:pb-14 lg:pb-20 max-w-xl mx-auto text-center px-5">
+      <div className="py-40 max-w-xl mx-auto text-center px-5">
         <div className="mb-14 lg:mb-20 max-w-[19rem] md:max-w-md mx-auto">
           <p className="text-xl md:text-2xl lg:text-3xl font-medium">
             <span>We </span>
