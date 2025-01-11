@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Lexend, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --primary: #60a6e7;
+}
