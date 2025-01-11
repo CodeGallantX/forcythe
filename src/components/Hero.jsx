@@ -1,6 +1,6 @@
 const Hero = () => {
     return (
-        <div>
+        <div className="bg-[url('/header-background-svg')] bg-no-repeat md:min-h-screen">
             <div className="flex flex-col items-start justify-center w-full bg-white bg-opacity-10 rounded-[2rem] sm:rounded-[3rem]  p-5 py-8 md:p-8 lg:p-10 my-10 space-y-4">
                 <h1 className="text-7xl w-4/5">We build <span className="text-secondary">products</span> that shape a better future</h1>
                 <p className="text-lg text-gray-400 max-w-xl">We’re the architects of digital excellence across industries. We redefine business with cutting-edge digital strategies that invokes sector-wide transformation.</p>
