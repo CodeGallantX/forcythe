@@ -25,7 +25,7 @@ const Features = () => {
       
     >
       <div className="text-center mb-5">
-        <h2 className="text-[2rem] leading-[2.5rem] sm:text-[2.2rem] sm:leading-[2.5rem] lg:text-[2.6rem] lg:leading-[3rem] text-white">
+        <h2 className="text-[2rem] leading-[2.5rem] sm:text-[2.2rem] sm:leading-[2.5rem] lg:text-[2.6rem] lg:leading-[3rem] text-[#b3d0f2]">
           Your best call for <span className="capitalize">B2B/B2C</span> product innovation
         </h2>
       </div>
@@ -36,11 +36,11 @@ const Features = () => {
             className="relative flex flex-col items-center text-left rounded-2xl p-px w-fit h-min transition duration-500 overflow-visible border-0"
           >
             <div className="bg-[#030516] w-full rounded-2xl p-8 sm:p-10 hover:shadow-lg">
-              <div className="w-fit p-2 bg-[#60A6E7] bg-opacity-60 rounded-md mb-5">
-              <FiLayers className="text-primary"/>
+              <div className="w-fit p-2 bg-primary bg-opacity-60 rounded-md mb-5">
+              <FiLayers className="text-2xl"/>
               </div>
               <h4 className="text-2xl font-medium mb-5">{feature.title}</h4>
-              <p className="text-[17.5px] text-gray-600 mb-0">{feature.description}</p>
+              <p className="text-[17.5px] text-gray-300 mb-0">{feature.description}</p>
             </div>
             {/* <div
               className="absolute inset-0 z-0 rounded-[inherit] blur-md"

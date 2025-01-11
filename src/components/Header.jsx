@@ -1,4 +1,4 @@
-import { FaBars } from "react-icons/fa";
+import { HiOutlineMenuAlt3, HiX } from "react-icons/hi";
 import { useState } from "react";
 
 const Header = () => {
@@ -10,11 +10,10 @@ const Header = () => {
                 <img src="/forcythe_logo.svg" className="w-28" alt="Forcythe Logo" />
             </div>
             <nav
-                className={`absolute md:static top-16 left-0 md:top-0 md:left-0 w-full md:w-auto bg-white md:bg-transparent md:flex items-center justify-center transition-transform ${
-                    isMenuOpen ? "-translate-x-0" : "translate-x-full"
-                } md:translate-x-0 z-20`}
+                className={`absolute md:static top-14 right-10 border-r border-r-white max-w-sm w-full rounded-3xl md:rounded-none md:p-0 md:w-auto md:h-auto bg-bg md:bg-transparent text-white md:text-black rounded-xl md:rounded-none flex flex-col md:flex-row items-center justify-center space-y-6 md:space-y-0 md:space-x-7 transition-transform duration-300 ${isMenuOpen ? "block" : "hidden"
+                    } md:translate-x-0 z-20`}
             >
-                <ul className="flex flex-col md:flex-row items-center space-y-5 md:space-y-0 md:space-x-7 text-black md:text-white py-5 md:py-0 bg-white md:bg-transparent">
+                <ul className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-7 text-white">
                     <li><a href="#">About</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Portfolio</a></li>
@@ -22,16 +21,15 @@ const Header = () => {
                     <li><a href="#">Foundation</a></li>
                 </ul>
             </nav>
-            <div className="hidden md:block">
-                <button className="bg-white px-4 py-3 rounded-full hover:bg-[#064386] hover:text-white transition-all duration-300 ease">
-                    Book a call
-                </button>
-            </div>
+                <a href="#" className="hidden md:block relative group">
+                    <button className="bg-white px-5 py-3 rounded-full group-hover:bg-[#064386] text-bg font-semibold group-hover:text-white transition-all duration-300 ease">Book a call</button>
+                    <span className="absolute w-full h-full top-1.5 right-1.5 z-0 rounded-full border-[1px] border-dashed group-hover:border-[#064386] transition-all duration-300 ease"></span>
+                </a>
             <button
-                className="text-white text-2xl md:hidden"
+                className="text-white text-2xl md:hidden z-30"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
-                <FaBars />
+                {isMenuOpen ? <HiX /> : <HiOutlineMenuAlt3 />}
             </button>
         </header>
     );
