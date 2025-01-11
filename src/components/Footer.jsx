@@ -30,7 +30,7 @@ const Footer = () => {
                 </div>
             </div>
             <hr className="mt-6 border border-secondary"/>
-            <p className="text-gray-400 mt-2 text-sm">Copyright © 2024 Forcythe. All rights reserved.</p>
+            <p className="text-gray-400 mt-3 text-sm">Copyright © 2024 Forcythe. All rights reserved.</p>
         </footer>
     )
 }

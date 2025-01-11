@@ -1,6 +1,6 @@
 const Header = () => {
     return (
-        <header className="fixed w-full flex flex-row items-center justify-between bg-transparent backdrop-blur-xl px-24 py-5">
+        <header className="fixed w-full flex flex-row items-center justify-between bg-transparent backdrop-blur-xl px-28 py-5 z-30">
             <div>
                 <img src="/forcythe_logo.svg" className="" alt="" />
             </div>
