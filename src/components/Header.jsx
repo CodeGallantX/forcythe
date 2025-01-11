@@ -13,7 +13,7 @@ const Header = () => {
                 className={`absolute md:static top-28 right-8 w-2/4 px-8 py-10 rounded-2xl md:rounded-none md:p-0 md:w-auto md:h-auto bg-gradient-to-b from-[#061626] to-black md:bg-transparent text-white md:text-black rounded-xl md:rounded-none flex flex-col md:flex-row items-center justify-center space-y-6 md:space-y-0 md:space-x-7 transition-transform duration-300 ${isMenuOpen ? "block" : "hidden"
                     } md:translate-x-0 z-20`}
             >
-                <ul className="flex  flex-col md:flex-row items-start md:items-center mr-auto space-y-6 md:space-y-0 md:space-x-7 text-white">
+                <ul className="flex flex-col md:flex-row items-start md:items-center mr-auto space-y-6 md:space-y-0 md:space-x-7 text-white">
                     <li><a href="#">About</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Portfolio</a></li>
