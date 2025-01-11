@@ -13,9 +13,9 @@ const Header = () => {
                     <li><a href="#">Foundation</a></li>
                 </ul>
             </nav>
-            <div className="relative">
-                <button className="bg-white px-4 py-3 rounded-full">Book a call</button>
-                <span className="absolute border border-dotted border-white w-10 h-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full"></span>
+            <div className="relative group cursor-pointer">
+                <button className="bg-white px-4 py-3 rounded-full group-hover:bg-[#064386] group-hover:text-white transition-all duration-300 ease">Book a call</button>
+                <span className="absolute w-full h-full top-1.5 right-1.5 z-0 rounded-full border-[1px] border-dashed group-hover:border-[#064386] transition-all duration-300 ease"></span>
             </div>
         </header>
     )
