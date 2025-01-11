@@ -1,6 +1,6 @@
 const Footer = () => {
     return (
-        <footer>
+        <footer className="">
             <div className="flex flex-col items-start justify-start text-sm max-w-lg">
                 <fieldset className="flex flex-row w-full">
                     <input type="email" className=" w-full bg-bg border outline-none border-white rounded-l-full px-4 py-3" placeholder="Your Email Address"/>
@@ -11,7 +11,9 @@ const Footer = () => {
                     <label htmlFor="agree">I agree to receive other notifications from Forcythe</label>
                 </fieldset>
             </div>
-            <div>
+            <div className="flex flex-col items-start justify-start space-y-3">
+                <img src="/forcythe_logo.svg" alt="" />
+                <p className="text-gray-500">We are the growth company for businesses looking to scale. We are dedicated to transforming businesses with bespoke digital solutions that drive growth.</p>
             </div>
             <div>
             </div>
