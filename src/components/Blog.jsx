@@ -8,7 +8,21 @@ const Blog = () => {
             category: "Blog",
             author: "The Reformist",
             date: "May 29th, 2024",
-            img: "ai-over-art.webp"
+            img: "/ai-over-art.webp"
+        },
+        {
+            title: "Cryptocurrency VS tokens",
+            category: "Blog",
+            author: "The Reformist",
+            date: "May 29th, 2024",
+            img: "/cryptocurrency-vs-tokens.webp"
+        },
+        {
+            title: "Cryptocurrency and Crypto assets",
+            category: "Blog",
+            author: "The Reformist",
+            date: "May 29th, 2024",
+            img: "/cryptocurrency-and-crypto-asset.webp"
         }
     ]
     return (
@@ -20,14 +34,14 @@ const Blog = () => {
                     <span className="absolute w-full h-full top-1.5 right-1.5 z-0 rounded-full border-[1px] border-dashed group-hover:border-[#064386] transition-all duration-300 ease"></span>
                 </a>
             </div>
-            <div>
-                <div>
-                    {posts.map((post, index) => (
-                        <a key={index} href="#" className="flex flex-col items-start justify-center rounded-2xl group hover:border-b hover:border-b-white transition-all duration-300 ease-in-out">
-                            <div className="bg-[#070e21] max-w-md h-auto">
-                                <img src={post.img} alt={post.title} loading="lazy" className="w-full object-cover rounded-xl" />
-                            </div>
-                            <div className="flex flex-col items-start justify-center py-4 group-hover:px-3 transition-all duration-300 ease-in-out">
+            <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10 mt-10">
+                {posts.map((post, index) => (
+                    <a key={index} href="#" className="flex flex-col items-start justify-center rounded-2xl group hover:border-b hover:border-b-white transition-all duration-300 ease-in-out">
+                        <div className="bg-[#070e21] max-w-md h-auto">
+                            <img src={post.img} alt={post.title} loading="lazy" className="w-full object-cover rounded-xl" />
+                        </div>
+                        <div className="flex flex-col items-start justify-center py-4 ">
+                            <div className="group-hover:px-3 transition-all duration-300 ease-in-out">
                                 <div className="p-3 border-l-2 border-l-white transition-all duration-300 ease-in-out">
                                     <h5 className="font-semibold text-xl">{post.category}</h5>
                                     <div className="flex flex-row items-center justify-start space-x-2">
@@ -36,12 +50,11 @@ const Blog = () => {
                                         <span>{post.date}</span>
                                     </div>
                                 </div>
-                                <h3 className="text-3xl font-semibold mt-3">{post.title}</h3>
                             </div>
-                        </a>
-                    ))}
-                </div>
-
+                            <h3 className="text-3xl font-semibold mt-3 ml-4">{post.title}</h3>
+                        </div>
+                    </a>
+                ))}
             </div>
         </div>
     )
