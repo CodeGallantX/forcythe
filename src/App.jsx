@@ -22,7 +22,7 @@ const App = () => {
         <Stat />
         <Blog />
       </div>
-        <div className="bg-gradient-to-b from-bg to-[#061626] px-6 lg:px-16 xl:px-28 py-14 text-white">
+        <div className="bg-gradient-to-b from-bg to-[#061626] px-6 lg:px-16 xl:px-28 py-4 text-white">
           <CTA />
           <Footer />
         </div>

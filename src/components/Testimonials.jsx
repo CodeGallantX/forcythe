@@ -40,6 +40,7 @@ const Testimonials = () => {
                             <img
                                 src={company.logo}
                                 alt={company.name}
+                                loading="lazy"
                                 className={`w-10 h-10  object-contain ${
                                     index === 0
                                         ? "sm:w-10 sm:h-full"
@@ -72,6 +73,7 @@ const Testimonials = () => {
                         src={companies[activeTab].src}
                         alt="Author"
                         className="relative w-full h-64 sm:h-auto object-cover rounded-xl"
+                        loading="lazy"
                     />
                 </div>
             </div>

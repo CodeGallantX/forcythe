@@ -74,6 +74,7 @@ const Process = () => {
                         alt={steps[activeStep].name}
                         src={steps[activeStep].illustration}
                         className="w-full h-[350px] md:w-[95%] md:h-[95%] lg:w-[90%] lg:h-[426px]"
+                        loading="lazy"
                     />
                 </div>
             </div>

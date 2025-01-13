@@ -34,16 +34,16 @@ const Blog = () => {
                     <span className="absolute w-full h-full top-1.5 right-1.5 z-0 rounded-full border-[1px] border-dashed group-hover:border-[#064386] transition-all duration-300 ease"></span>
                 </a>
             </div>
-            <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10 mt-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mt-10 items-start">
                 {posts.map((post, index) => (
-                    <a key={index} href="#" className="flex flex-col items-start justify-center rounded-2xl group hover:border-b hover:border-b-white transition-all duration-300 ease-in-out">
-                        <div className="bg-[#070e21] max-w-md h-auto">
+                    <a key={index} href="#" className="w-full flex flex-col items-start justify-center rounded-2xl group hover:border-b hover:border-b-white transition-all duration-300 ease-in-out">
+                        <div className="bg-[#070e21] max-w-2xl h-auto">
                             <img src={post.img} alt={post.title} loading="lazy" className="w-full object-cover rounded-xl" />
                         </div>
                         <div className="flex flex-col items-start justify-center py-4 ">
                             <div className="group-hover:px-3 transition-all duration-300 ease-in-out">
                                 <div className="p-3 border-l-2 border-l-white transition-all duration-300 ease-in-out">
-                                    <h5 className="font-semibold text-xl">{post.category}</h5>
+                                    <h5 className="font-medium text-xl">{post.category}</h5>
                                     <div className="flex flex-row items-center justify-start space-x-2">
                                         <span>{post.author}</span>
                                         <span className="w-3 h-3 rounded-full bg-white"></span>

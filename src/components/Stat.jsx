@@ -2,7 +2,7 @@ import CountUp from "react-countup";
 
 const Stat = () => {
   return (
-    <div className="relative mx-auto bg-gradient-to-b from-[#0c2645] to-bg py-20">
+    <div className="relative mx-auto bg-gradient-to-b from-[#0c2645] to-bg py-10">
       <div>
         <img src="/arc.svg" alt="" className="absolute max-w-3xl w-full h-[30rem] object-cover object-top left-1/2 -translate-x-1/2" />
       </div>
