@@ -6,8 +6,8 @@ const ProjectSlider = () => {
     "/activity.svg",
     "/africaFund.svg",
     "/starks_project.svg",
-    "/exec-pro.svg",
     "/phone.svg",
+    "/exec-pro.svg",
   ];
 
   const sliderTopRef = useRef(null);
@@ -31,7 +31,7 @@ const ProjectSlider = () => {
   }, []);
 
   return (
-    <div className="py-10 bg-gradient-to-b from-transparent to-gray-900">
+    <div className="py-0 bg-gradient-to-b from-transparent to-gray-900">
       <div className="min-h-[60px] text-center mb-8">
         <p className="text-[2rem] sm:text-[2.2rem] lg:text-[2.6rem] leading-[2.5rem] lg:leading-[3rem] max-w-[90%] mx-auto">
           <span className="text-gray-100">Success in </span>
@@ -42,7 +42,7 @@ const ProjectSlider = () => {
       <div className="relative overflow-hidden">
         <div
           ref={sliderTopRef}
-          className="animate-scroll-left whitespace-nowrap h-96"
+          className="animate-scroll-left whitespace-nowrap"
         >
           {[...images, ...images].map((src, index) => (
             <div
@@ -65,7 +65,7 @@ const ProjectSlider = () => {
           {[...images, ...images].map((src, index) => (
             <div
               key={`bottom-${index}`}
-              className="inline-block w-full mx-2"
+              className="inline-block w-[150px] lg:w-[250px] mx-2"
             >
               <img
                 alt={`project-image-bottom-${index}`}
