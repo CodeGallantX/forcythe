@@ -42,7 +42,7 @@ const ProjectSlider = () => {
       <div className="relative overflow-hidden">
         <div
           ref={sliderTopRef}
-          className="animate-scroll-left whitespace-nowrap"
+          className="grid grid-cols-10 animate-scroll-left whitespace-nowrap"
         >
           {[...images, ...images].map((src, index) => (
             <div
