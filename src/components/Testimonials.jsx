@@ -51,7 +51,7 @@ const Testimonials = () => {
             </div>
 
             <div
-                className="relative max-w-3xl mx-auto p-6 sm:p-8 bg-[#0c2745] text-white rounded-2xl flex flex-col sm:flex-row"
+                className="relative max-w-2xl mx-auto space-x-4 p-6 sm:p-8 bg-[#0c2745] text-white rounded-2xl flex flex-col sm:flex-row"
                 style={{
                     marginLeft: `calc(${activeTab * 20}% - ${activeTab * 10}px)`,
                 }}
@@ -59,7 +59,7 @@ const Testimonials = () => {
                 <div className="sm:w-3/5 mb-6 sm:mb-0 sm:pr-6">
                     <p className="text-base sm:text-lg font-semibold mb-4">{companies[activeTab].name || "Company"}</p>
                     <p className="text-sm sm:text-base leading-6">{companies[activeTab].testimonial}</p>
-                    <p className="mt-4 text-sm font-medium">{companies[activeTab].author}</p>
+                    <p className="mt-4 text-base font-medium">{companies[activeTab].author}</p>
                 </div>
 
                 <div className="sm:w-2/5 relative">
