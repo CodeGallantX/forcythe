@@ -42,3 +42,7 @@
     transform: translate(0, 0);
   }
 }
+
+.motion-span {
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}

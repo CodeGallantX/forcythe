@@ -8,6 +8,36 @@ const ProjectSlider = () => {
     "/starks_project.svg",
     "/phone.svg",
     "/exec-pro.svg",
+    "/stac.svg",
+    "/activity.svg",
+    "/africaFund.svg",
+    "/starks_project.svg",
+    "/phone.svg",
+    "/exec-pro.svg",
+    "/stac.svg",
+    "/activity.svg",
+    "/africaFund.svg",
+    "/starks_project.svg",
+    "/phone.svg",
+    "/exec-pro.svg",
+    "/stac.svg",
+    "/activity.svg",
+    "/africaFund.svg",
+    "/starks_project.svg",
+    "/phone.svg",
+    "/exec-pro.svg",
+    "/stac.svg",
+    "/activity.svg",
+    "/africaFund.svg",
+    "/starks_project.svg",
+    "/phone.svg",
+    "/exec-pro.svg",
+    "/stac.svg",
+    "/activity.svg",
+    "/africaFund.svg",
+    "/starks_project.svg",
+    "/phone.svg",
+    "/exec-pro.svg",
   ];
 
   const sliderTopRef = useRef(null);
@@ -31,7 +61,7 @@ const ProjectSlider = () => {
   }, []);
 
   return (
-    <div className="py-0 bg-bg">
+    <div className="py-10 pb-16 bg-bg">
       <div className="min-h-[60px] text-center mb-8">
         <p className="text-[2rem] sm:text-[2.2rem] lg:text-[2.6rem] leading-[2.5rem] lg:leading-[3rem] max-w-[90%] mx-auto">
           <span className="text-gray-100">Success in </span>
@@ -42,12 +72,12 @@ const ProjectSlider = () => {
       <div className="relative overflow-hidden">
         <div
           ref={sliderTopRef}
-          className="flex flex-row items-center justify-center space-x-20 animate-scroll-left whitespace-nowrap"
+          className="animate-scroll-left whitespace-nowrap"
         >
           {[...images, ...images].map((src, index) => (
             <div
               key={`top-${index}`}
-              className="inline-block w-full h-auto mx-2"
+              className="inline-block w-[150px] lg:w-[250px] h-auto mx-2"
             >
               <img
                 alt={`project-image-top-${index}`}

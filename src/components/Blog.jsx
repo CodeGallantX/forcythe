@@ -37,8 +37,8 @@ const Blog = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12 mt-10 items-start">
                 {posts.map((post, index) => (
                     <a key={index} href="#" className="w-full flex flex-col items-start justify-center rounded-2xl group  hover:ring-1 hover:ring-[#064386] transition-all duration-500 ease-in-out delay-100">
-                        <div className="bg-[#070e21] max-w-2xl h-full">
-                            <img src={post.img} alt={post.title} loading="lazy" className="w-full h-52 object-cover rounded-xl" />
+                        <div className="bg-[#070e21] w-full md:max-w-2xl h-full">
+                            <img src={post.img} alt={post.title} loading="lazy" className="w-full h-auto md:h-52 object-cover rounded-xl" />
                         </div>
                         <div className="flex flex-col items-start justify-center py-6 group-hover:px-3 transition-all duration-300 ease-in-out">
                             <div className="px-3 py-0 border-l border-l-white transition-all duration-300 ease-in-out">

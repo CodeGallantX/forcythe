@@ -2,7 +2,13 @@ import { useState } from "react";
 
 const Testimonials = () => {
     const companies = [
-        { name: "Starks", logo: "/starks.svg", src:"/john.svg", testimonial: "Partnering with Forcythe was like finding a hidden gem. Their genuine interest in our success was palpable, and the continuous support post-launch has been a testament to their commitment. They’ve become more than a service provider; they’re a trusted ally.", author: "John, CEO" },
+        {
+            name: "Starks", 
+            logo: "/starks.svg", 
+            src:"/john.svg", 
+            testimonial: "Partnering with Forcythe was like finding a hidden gem. Their genuine interest in our success was palpable, and the continuous support post-launch has been a testament to their commitment. They’ve become more than a service provider; they’re a trusted ally.", 
+            author: "John, CEO" 
+        },
         { name: "ExecutivePros", logo: "/ExecutivePros_Logo.svg", src:"/executive-pro-ceo.svg", testimonial: "The team understood the assignment and delivered very well. One of the things that stood them out was how they took our concepts and turned it into visually appealing designs that caught the eyes of our clients and made increased web engagements. Kudos!", author: "Testimony, Co-founder" },
         { name: "Stac AI", logo: "/stacai.svg", src:"/edwin.svg", testimonial: "Forcythe is seriously amazing when it comes to coming up with new ideas. They took our rough ideas and turned them into something incredible online. Their team’s commitment to our vision was evident every step of the way.", author: "Edwin, Former CTO" },
         { name: "Iwaria", logo: "/iwaria.svg", src:"/iwaria-founder.svg", testimonial: "The moment we engaged Forcythe, it was clear they were in a league of their own. Their strategic approach to our project not only enhanced our online platform but also enriched our brand’s story, captivating our audience like never before.", author: "Iwaria, Founder" },
@@ -20,7 +26,7 @@ const Testimonials = () => {
             </div>
 
             <div className="w-full overflow-x-auto mb-8">
-                <div className="flex flex-row items-center justify-between w-full border border-blue-700 rounded-full bg-bg gap-0">
+                <div className="flex flex-row items-center justify-between overflow-hidden w-full border border-blue-700 rounded-full bg-bg gap-0">
                     {companies.map((company, index) => (
                         <button
                             key={company.logo}
