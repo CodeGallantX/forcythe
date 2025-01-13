@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay";
-import { Autoplay } from "swiper";
+// import { Autoplay } from "swiper";
 
 const ProjectSlider = () => {
   const images = [
@@ -22,7 +22,7 @@ const ProjectSlider = () => {
          </p>
        </div>
 
-       <Swiper
+       {/* <Swiper
         spaceBetween={30}
         slidesPerView="auto"
         loop={true}
@@ -44,7 +44,7 @@ const ProjectSlider = () => {
             />
           </SwiperSlide>
         ))}
-      </Swiper>
+      </Swiper> */}
 
     {/*   <Swiper
     //     spaceBetween={30}
