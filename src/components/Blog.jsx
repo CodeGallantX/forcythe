@@ -1,6 +1,16 @@
 import { FaCaretRight } from "react-icons/fa6";
 
+
 const Blog = () => {
+    const posts = [
+        {
+            title: "Will AI take over Art?",
+            category: "Blog",
+            author: "The Reformist",
+            date: "May 29th, 2024",
+            img: "ai-over-art.webp"
+        }
+    ]
     return (
         <div className="py-10">
             <div className="px-28 flex flex-row items-center justify-between">
@@ -11,15 +21,21 @@ const Blog = () => {
                 </a>
             </div>
             <div>
-                <div>
-                    <div className="bg-[#070e21]">
-                        <img src="" alt="" />
-                    </div>
-                    <div>
+                {posts.map((post, index) => (
+
+                    <div key={index}>
+                        <a href="#">
+                            <div className="bg-[#070e21]">
+                                <img src={post.img} alt={post.title} />
+                            </div>
+                            <div>
+                                <h3>{post.title}</h3>
+                                <span>{post.author} * {post.date}</span>
+                            </div>
+                        </a>
 
                     </div>
-
-                </div>
+                ))
 
             </div>
         </div>
