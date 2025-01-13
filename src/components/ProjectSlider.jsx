@@ -47,7 +47,7 @@ const ProjectSlider = () => {
           {[...images, ...images].map((src, index) => (
             <div
               key={`top-${index}`}
-              className="inline-block w-[350px] md:w-[200px] lg:w-full mx-4"
+              className="inline-block w-[350px] md:max-w-3xl lg:w-full mx-4"
             >
               <img
                 alt={`project-image-top-${index}`}
@@ -65,7 +65,7 @@ const ProjectSlider = () => {
           {[...images, ...images].map((src, index) => (
             <div
               key={`bottom-${index}`}
-              className="inline-block w-[150px] md:w-[200px] lg:w-[250px] mx-4"
+              className="inline-block w-[150px] md:w-[200px] lg:w-full mx-4"
             >
               <img
                 alt={`project-image-bottom-${index}`}
