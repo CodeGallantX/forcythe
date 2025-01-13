@@ -6,3 +6,39 @@
   font-family: Lexend, system-ui, Avenir, Helvetica, Arial, sans-serif;
   --primary: #60a6e7;
 }
+
+.card-animation::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: -15px;
+  border-radius: inherit;
+  z-index: -1;
+  background: radial-gradient(
+    circle,
+    rgba(173, 216, 255, 0.5) 0%,
+    rgba(173, 216, 255, 0) 70%
+  );
+  animation: moving-light 4s infinite;
+}
+
+@keyframes moving-light {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(5px, -5px);
+  }
+  50% {
+    transform: translate(-5px, 5px);
+  }
+  75% {
+    transform: translate(5px, 5px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}

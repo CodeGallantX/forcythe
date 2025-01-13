@@ -22,7 +22,6 @@ const Features = () => {
   return (
     <section
       className="py-24 px-6 md:px-10 xl:px-28 bg-gradient-to-b from-[#030416] to-[#0c2645] z-10"
-      
     >
       <div className="text-center mb-5">
         <h2 className="text-[2rem] leading-[2.5rem] sm:text-[2.2rem] sm:leading-[2.5rem] lg:text-[2.6rem] lg:leading-[3rem] text-[#b3d0f2]">
@@ -33,23 +32,15 @@ const Features = () => {
         {features.map((feature, index) => (
           <div
             key={index}
-            className="relative flex flex-col items-center text-left rounded-2xl p-px w-fit h-min transition duration-500 overflow-visible border-0"
+            className="relative flex flex-col items-center text-left rounded-2xl p-px w-fit h-min overflow-visible border-0 card-animation"
           >
-            <div className="bg-[#030516] w-full rounded-2xl p-8 sm:p-10 hover:shadow-lg">
+            <div className="bg-[#030516] w-full rounded-2xl p-8 sm:p-10 hover:shadow-lg relative">
               <div className="w-fit p-2 bg-primary bg-opacity-60 rounded-md mb-5">
-              <FiLayers className="text-2xl"/>
+                <FiLayers className="text-2xl" />
               </div>
               <h4 className="text-2xl font-medium mb-5">{feature.title}</h4>
               <p className="text-[17.5px] text-gray-300 mb-0">{feature.description}</p>
             </div>
-            {/* <div
-              className="absolute inset-0 z-0 rounded-[inherit] blur-md"
-              style={{
-                background:
-                  "radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%)",
-              }}
-            ></div> */}
-            {/* <div className="absolute inset-[2px] bg-black rounded-[inherit] z-1"></div> */}
           </div>
         ))}
       </div>

@@ -11,8 +11,22 @@ export default {
         secondary: '#60a5e6',
         board: '#1d1f2e',
         bg: '#030416',
-      }
+      },
+      keyframes: {
+        scrollLeft: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+        scrollRight: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(100%)" },
+        },
+      },
+      animation: {
+        "scroll-left": "scrollLeft 15s linear infinite",
+        "scroll-right": "scrollRight 15s linear infinite",
+      },
     },
-  },
-  plugins: [],
+},
+plugins: [],
 }
