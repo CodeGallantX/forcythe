@@ -1,5 +1,5 @@
 import { HiMenuAlt2, HiX } from "react-icons/hi";
-import { FaCaretRight } from "react-icons/fa"
+import { FaCaretRight } from "react-icons/fa";
 import { useState } from "react";
 
 const Header = () => {
@@ -15,7 +15,7 @@ const Header = () => {
                 />
             </div>
 
-            <nav className="sm:hidden md:flex items-center space-x-7 text-white">
+            <nav className="hidden md:flex items-center space-x-7 text-white">
                 <ul className="flex items-center space-x-7">
                     <li>
                         <a href="#">About</a>
@@ -35,12 +35,12 @@ const Header = () => {
                 </ul>
 
             </nav>
-                <a href="#" className="relative group">
+                <a href="#" className="sm:hidden md:block relative group">
                     <button className="bg-white px-5 py-3 rounded-full group-hover:bg-[#064386] text-bg font-semibold group-hover:text-white transition-all duration-300 ease">
                         Book a call
                         <FaCaretRight className="inline-block ml-0.5 text-lg -translate-y-0.5 group-hover:hidden" />
                     </button>
-                    <span className="absolute w-full h-full top-1.5 right-1.5 z-0 rounded-full border-[1px] border-dashed group-hover:border-[#064386] transition-all duration-300 ease"></span>
+                    <span className="absolute w-full h-full top-1.5 right-1.5 -z-10 rounded-full border-[1px] border-dashed group-hover:border-[#064386] transition-all duration-300 ease"></span>
                 </a>
 
             <button
@@ -51,7 +51,7 @@ const Header = () => {
             </button>
 
             {isMenuOpen && (
-                <nav className="absolute top-28 right-10 max-w-96 py-10 pr-28 border border-[#101d2d] px-6 rounded-[2.5rem] bg-gradient-to-b from-[#061626] to-black text-white flex flex-col items-start justify-center space-y-6 z-20">
+                <nav className="block md:hidden absolute top-28 right-10 max-w-96 py-10 pr-28 border border-[#101d2d] px-6 rounded-[2.5rem] bg-gradient-to-b from-[#061626] to-black text-white flex flex-col items-start justify-center space-y-6 z-20">
                     <ul className="text-left space-y-6">
                         <li>
                             <a href="#">About</a>

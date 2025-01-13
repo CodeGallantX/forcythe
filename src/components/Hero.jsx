@@ -9,30 +9,44 @@ const Hero = () => {
   });
 
   const splitLetters = (text) => {
-    return text.split("").map((char, index) => (
+    return text.split(" ").map((word, wordIndex) => (
       <motion.span
-        key={index}
-        className="inline-block"
-        initial={{ opacity: 0, y: 0 }}
+        key={wordIndex}
+        className="inline-block mr-3 md:mr-4" 
+        initial={{ opacity: 0, y: 20 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
-        transition={{ delay: index * 0.08, duration: 0.2 }}
+        transition={{ delay: wordIndex * 0.3, duration: 0.3 }}
       >
-        {char === " " ? "\u00A0" : char}
+        {word.split("").map((char, charIndex) => (
+          <motion.span
+            key={`${wordIndex}-${charIndex}`}
+            className={`inline-block ${
+              word.toLowerCase() === "products" ? "text-primary" : ""
+            }`}
+            initial={{ opacity: 0, y: 20 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{
+              delay: wordIndex * 0.3 + charIndex * 0.05,
+              duration: 0.2,
+            }}
+          >
+            {char}
+          </motion.span>
+        ))}
       </motion.span>
     ));
   };
 
   const splitWords = (text) => {
-    return text.split(" ").map((word, index) => (
+    return text.split(" ").map((word, wordIndex) => (
       <motion.span
-        key={index}
-        className="inline-block"
-        initial={{ opacity: 0, y: 0 }}
+        key={wordIndex}
+        className="inline-block mr-2 text-gray-400"
+        initial={{ opacity: 0, y: 20 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
-        transition={{ delay: index * 0.2, duration: 0.1 }}
+        transition={{ delay: wordIndex * 0.2, duration: 0.3 }}
       >
         {word}
-        {index < text.split(" ").length - 1 && "\u00A0"}
       </motion.span>
     ));
   };
