@@ -23,22 +23,22 @@ const Blog = () => {
             <div>
                 <div>
                     {posts.map((post, index) => (
-                        <div key={index} className="rounded-2xl">
-                            <a href="#">
-                                <div className="bg-[#070e21] max-w-md h-auto">
-                                    <img src={post.img} alt={post.title} loading="lazy" className="w-full object-cover" />
-                                </div>
-                                <div>
-                                    <h5>{post.category}</h5>
-                                    <div>
+                        <a key={index} href="#" className="flex flex-col items-start justify-center rounded-2xl group hover:border-b hover:border-b-white transition-all duration-300 ease-in-out">
+                            <div className="bg-[#070e21] max-w-md h-auto">
+                                <img src={post.img} alt={post.title} loading="lazy" className="w-full object-cover rounded-xl" />
+                            </div>
+                            <div className="flex flex-col items-start justify-center py-4 group-hover:px-3 transition-all duration-300 ease-in-out">
+                                <div className="p-3 border-l-2 border-l-white transition-all duration-300 ease-in-out">
+                                    <h5 className="font-semibold text-xl">{post.category}</h5>
+                                    <div className="flex flex-row items-center justify-start space-x-2">
                                         <span>{post.author}</span>
-                                        <span className="w-10 h-10 rounded-full bg-white"></span>
+                                        <span className="w-3 h-3 rounded-full bg-white"></span>
                                         <span>{post.date}</span>
                                     </div>
-                                    <h3>{post.title}</h3>
                                 </div>
-                            </a>
-                        </div>
+                                <h3 className="text-3xl font-semibold mt-3">{post.title}</h3>
+                            </div>
+                        </a>
                     ))}
                 </div>
 
