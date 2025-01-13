@@ -93,7 +93,7 @@ const Testimonials = () => {
                                 src={company.logo}
                                 alt={company.name}
                                 loading="lazy"
-                                className="w-20 h-20 object-contain"  {/* Increased logo size */}
+                                className="w-20 h-20 object-contain" // Removed inline comment to avoid JSX error
                             />
                             <span className="hidden sm:inline">{company.name}</span>
                         </button>
@@ -114,7 +114,6 @@ const Testimonials = () => {
                 <div className="sm:w-3/5 mb-6 sm:mb-0 sm:pr-6">
                     <motion.p
                         className="text-base sm:text-lg font-semibold mb-4"
-                        key={`name-${activeTab}`}
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.4 }}
@@ -123,7 +122,6 @@ const Testimonials = () => {
                     </motion.p>
                     <motion.p
                         className="text-sm sm:text-base leading-6"
-                        key={`testimonial-${activeTab}`}
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
@@ -132,7 +130,6 @@ const Testimonials = () => {
                     </motion.p>
                     <motion.p
                         className="mt-4 text-base font-medium"
-                        key={`author-${activeTab}`}
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1 }}
