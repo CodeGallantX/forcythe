@@ -13,9 +13,9 @@ const App = () => {
   return (
     <div>
       <Header />
-      <div className="bg-bg text-white py-20 min-h-screen">
+      <div className="bg-bg text-white py-4 min-h-screen">
         <Hero />
-        {/* <ProjectSlider /> */}
+        <ProjectSlider />
         <Testimonials />
         <Process />
         <Features />

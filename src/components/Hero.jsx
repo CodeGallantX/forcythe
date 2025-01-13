@@ -2,7 +2,7 @@ import { FaCaretRight } from "react-icons/fa6";
 
 const Hero = () => {
     return (
-        <div className="px-6 lg:px-16 xl:px-28 relative">
+        <div className="py-20 px-6 lg:px-16 xl:px-28 relative">
             <div>
                 <img src="/header-background.svg" alt="" className="absolute object-cover w-full h-full md:w-11/12 left-1/3 -translate-x-1/3" />
             </div>

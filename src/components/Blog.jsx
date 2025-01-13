@@ -26,8 +26,8 @@ const Blog = () => {
         }
     ]
     return (
-        <div className="py-10 px-6 lg:px-16 xl:px-28">
-            <div className="flex flex-row items-center justify-between">
+        <div className="py-4 px-6 lg:px-16 xl:px-28">
+            <div className="flex flex-col md:flex-row items-start space-y-6 md:items-center justify-between">
                 <h1 className="text-4xl">Read our articles, news and product blog</h1>
                 <a href="#" className="relative group">
                     <button className="bg-white px-5 py-3 rounded-full group-hover:bg-[#064386] text-bg font-semibold group-hover:text-white transition-all duration-300 ease">Visit Blog <FaCaretRight className="inline-block ml-0.5 text-lg -translate-y-0.5 group-hover:hidden" /></button>

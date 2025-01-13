@@ -1,8 +1,8 @@
-const Header = () => {
+const ProjectSlider = () => {
     return (
         <div>
         </div>
     )
 }
 
-export default Header
+export default ProjectSlider
