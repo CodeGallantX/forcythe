@@ -100,7 +100,7 @@ const Testimonials = () => {
             </div>
 
             <motion.div
-                className="relative w-full md:max-w-2xl mx-auto space-x-4 p-6 sm:p-8 bg-[#0c2745] text-white rounded-2xl flex flex-col sm:flex-row"
+                className="relative max-w-2xl mx-auto space-x-4 p-6 sm:p-8 bg-[#0c2745] text-white rounded-2xl flex flex-col sm:flex-row"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
