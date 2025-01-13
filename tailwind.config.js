@@ -13,18 +13,18 @@ export default {
         bg: '#030416',
       },
       keyframes: {
-        scrollLeft: {
+        "scroll-left": {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-100%)" },
         },
-        scrollRight: {
+        "scroll-right": {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(100%)" },
         },
       },
       animation: {
-        "scroll-left": "scrollLeft 15s linear infinite",
-        "scroll-right": "scrollRight 15s linear infinite",
+        "scroll-left": "scroll-left 20s linear infinite",
+        "scroll-right": "scroll-right 20s linear infinite",
       },
     },
 },

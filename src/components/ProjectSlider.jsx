@@ -42,16 +42,16 @@ const ProjectSlider = () => {
       <div className="relative overflow-hidden">
         <div
           ref={sliderTopRef}
-          className="flex animate-scroll-left whitespace-nowrap"
+          className="animate-scroll-left whitespace-nowrap h-96"
         >
           {[...images, ...images].map((src, index) => (
             <div
               key={`top-${index}`}
-              className="inline-block w-[350px] md:max-w-3xl lg:w-full mx-4"
+              className="inline-block w-[300px] h-auto mx-2"
             >
               <img
                 alt={`project-image-top-${index}`}
-                className="w-full h-auto object-contain"
+                className="w-full h-auto object-cover"
                 src={src}
               />
             </div>
@@ -60,16 +60,16 @@ const ProjectSlider = () => {
 
         <div
           ref={sliderBottomRef}
-          className="flex animate-scroll-right whitespace-nowrap mt-6"
+          className="animate-scroll-right whitespace-nowrap mt-6"
         >
           {[...images, ...images].map((src, index) => (
             <div
               key={`bottom-${index}`}
-              className="inline-block w-[150px] md:w-[200px] lg:w-full mx-4"
+              className="inline-block w-full mx-2"
             >
               <img
                 alt={`project-image-bottom-${index}`}
-                className="w-full h-auto object-contain"
+                className="w-full h-auto object-cover"
                 src={src}
               />
             </div>
