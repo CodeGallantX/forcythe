@@ -15,7 +15,7 @@ const Header = () => {
                 />
             </div>
 
-            <nav className="hidden md:flex items-center space-x-7 text-white">
+            <nav className="sm:hidden md:flex items-center space-x-7 text-white">
                 <ul className="flex items-center space-x-7">
                     <li>
                         <a href="#">About</a>

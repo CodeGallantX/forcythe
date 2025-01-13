@@ -8,9 +8,14 @@ const Footer = () => {
                         <button className="bg-white text-bg px-7 py-3 text-bg rounded-r-full border border-l-0 border-white hover:bg-[#064386] hover:text-white transition-all duration-300 ease-in-out">Subscribe</button>
                     </fieldset>
                     <fieldset className="flex flex-row items-center outline-none justify-start space-x-2">
-                        <input type="checkbox" id="agree" className="appearance-none w-4 h-4 rounded-full bg-bg border-white border-2 border-solid" />
-                        <label htmlFor="agree">I agree to receive other notifications from Forcythe</label>
-                    </fieldset>
+  <input
+    type="checkbox"
+    id="agree"
+    className="appearance-none w-4 h-4 rounded-full bg-bg border-white border-2 border-solid checked:bg-white checked:border-transparent checked:ring-2 checked:ring-white checked:ring-offset-2"
+  />
+  <label htmlFor="agree">I agree to receive other notifications from Forcythe</label>
+</fieldset>
+
                 </div>
                 <div className="col-span-2 grid grid-cols-3 gap-6 md:gap-20">
                     <div className="col-span-2 flex flex-col items-start justify-start space-y-5">
