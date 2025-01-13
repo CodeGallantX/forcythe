@@ -62,7 +62,6 @@ const Testimonials = () => {
 
     return (
         <section className="py-16 px-6 md:px-10 xl:px-28 bg-bg">
-            {/* Header */}
             <div className="max-w-5xl mx-auto text-center mb-12">
                 <h2 className="text-2xl sm:text-3xl lg:text-[2.7rem] leading-relaxed text-white">
                     {splitWords(
@@ -71,9 +70,8 @@ const Testimonials = () => {
                 </h2>
             </div>
 
-            {/* Tabs */}
             <div className="w-full overflow-x-auto mb-8">
-                <div className="flex flex-row items-center justify-start w-full border border-blue-700 rounded-full bg-bg">
+                <div className="grid grid-cols-5 items-center justify-center w-full border border-blue-700 rounded-full bg-bg">
                     {companies.map((company, index) => (
                         <button
                             key={company.logo}
@@ -93,7 +91,7 @@ const Testimonials = () => {
                                 src={company.logo}
                                 alt={company.name}
                                 loading="lazy"
-                                className="w-20 h-20 object-contain" // Removed inline comment to avoid JSX error
+                                className="w-20 h-20 object-contain"
                             />
                             <span className="hidden sm:inline">{company.name}</span>
                         </button>
@@ -101,7 +99,6 @@ const Testimonials = () => {
                 </div>
             </div>
 
-            {/* Testimonial Card */}
             <motion.div
                 className="relative max-w-2xl mx-auto space-x-4 p-6 sm:p-8 bg-[#0c2745] text-white rounded-2xl flex flex-col sm:flex-row"
                 initial={{ opacity: 0, y: 20 }}
