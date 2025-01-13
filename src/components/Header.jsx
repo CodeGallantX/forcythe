@@ -5,7 +5,7 @@ const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <header className="fixed w-full flex items-center justify-between bg-transparent backdrop-blur-xl px-5 md:px-28 py-7 md:py-8 z-30">
+        <header className="fixed w-full flex items-center justify-between bg-transparent backdrop-blur-xl px-6 lg:px-16 xl:px-28 py-7 md:py-8 z-30">
             <div>
                 <img src="/forcythe_logo.svg" className="w-28" alt="Forcythe Logo" />
             </div>
